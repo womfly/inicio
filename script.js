@@ -125,7 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 imgRight.src = p.imgR;
                 if (projectDesc) projectDesc.textContent = p.desc;
                 if (projectClient) projectClient.textContent = p.client;
-                if (currentIndex ===1 ) firstLoad = true;
+                if (currentIndex ===1 ) {
+                    firstLoad = true;
+                    extraDesc.textContent = p.extra;
+                    extraColumn.style.display = "block";
+                    setTimeout(() => { extraColumn.style.opacity = "1"; }, 10);
+                }
                 if (firstLoad && currentIndex === 0) currentIndex = 1;
                 if (currentIndex === 0) {
                     // Ocultar si volvemos al principio
