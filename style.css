@@ -2738,7 +2738,7 @@ h2, h3, .hero-subtitle {
     }
 
     .hero-logo-text {
-        font-size: clamp(4rem, 11vw, 3.8rem);
+        font-size: clamp(2.8rem, 11vw, 3.8rem);
     }
 
     .main-logo {
