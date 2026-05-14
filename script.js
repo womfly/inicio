@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             desc: "La unión de dos mundos creativos bajo una misma visión: Womfly.",
             client: "Explora el universo Womfly",
-            extra: "Descripción inicial o bienvenida del catálogo.",
+            extra: "Nuestros servicios.",
             imgL: "media/fotodual.jpeg",
             imgR: "media/logo-grandeB.png",
             color: "#9bc4fe"
