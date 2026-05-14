@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     // Mostrar y actualizar texto extra
                     extraDesc.textContent = p.extra;
-                    extraColumn.style.display = "block";
-                    setTimeout(() => { extraColumn.style.opacity = "1"; }, 10);
+                    extraColumn.style.display = "none";
+                    setTimeout(() => { extraColumn.style.opacity = "0"; }, 10);
                 }
 
                 document.documentElement.style.setProperty('--accent-color', p.color);
