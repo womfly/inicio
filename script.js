@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             mainButterfly.classList.add('is-folding');
-            if (infoWrapper) infoWrapper.classList.add('fade-out-right');
 
             setTimeout(() => {
                 currentIndex = (currentIndex + 1) % projects.length;

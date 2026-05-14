@@ -98,7 +98,7 @@ select {
 }
 
 .hero {
-  padding: 18px 16px 32px;
+  padding: 18px 16px 10x;
 }
 
 .logo-with-butterflies {
@@ -113,6 +113,11 @@ select {
 .hero-logo-text {
   font-size: clamp(2.4rem, 12vw, 3.6rem);
   line-height: 1.05;
+}
+
+section .hero {
+  margin-bottom: 0%;
+  padding-bottom: 10px;
 }
 
 .main-logo {
