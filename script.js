@@ -100,6 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const extraColumn = document.getElementById('extra-info-column');
     const extraDesc = document.getElementById('project-extra-desc');
 
+
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (!link) return;
+        const href = link.getAttribute('href');
+        // Si el enlace es externo o a otra página, no hacer nada (dejar que funcione)
+        if (href && (href.startsWith('http') || !href.startsWith('#'))) {
+            return; 
+        }
+    });
+
     if (mainButterfly) {
         mainButterfly.addEventListener('click', () => {
             if (isAnimating) return;
