@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================
     const colorInicio = "#1dbbff"; // Color base al estar al principio
     const textoKalon = "TRATAMIENTOS FACIALES:\n• Higiene facial\n• Higiene más Técnica de Kobido\n\nTRATAMIENTOS CORPORALES:\n• Higiene corporal\n• Ritual chocolate\n• Terapia Geotermal\n• Tratamiento anticelulítico\n";
+    const textoWomfly = "Nuestros servicios:";
     const textoOlivalolo ="FOTOGRAFÍA PERFIL PERSONAL: \n• Pack exclusivo para empresas y profesionales. \n• Fotografía de retrato y familiar\n\nILUSTRACIÓN:\n• Retratos personalizados\n• Maquetación e ilustración\n\nVIDEO MARKETING:\n•Cortometrajes\n•Documentales\n•Videoclips.";
     const projects = [
         {
@@ -125,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (projectClient) projectClient.textContent = p.client;
                 if (currentIndex === 0) {
                     // Ocultar si volvemos al principio
-                    extraColumn.style.opacity = "1";
+                    extraColumn.style.opacity = "0";
                 } else {
                     // Mostrar y actualizar texto extra
                     extraDesc.textContent = p.extra;
