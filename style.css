@@ -2620,6 +2620,7 @@ h2, h3, .hero-subtitle {
     line-height: 1.6;
     color: white;
     opacity: 0.9;
+    white-space: pre-wrap;
 }
 
 .instruction {

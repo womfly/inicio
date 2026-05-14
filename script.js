@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. CONFIGURACIÓN DE DATOS (Proyectos)
     // =========================================
     const colorInicio = "#1dbbff"; // Color base al estar al principio
+    const infoKalon = "\"La belleza más allá de la piel\" \nMi objetivo es promover el autocuidado fomentando el descubrimiento del propio espacio y bienestar.";
     const textoKalon = "TRATAMIENTOS FACIALES:\n• Higiene facial\n• Higiene más Técnica de Kobido\n\nTRATAMIENTOS CORPORALES:\n• Higiene corporal\n• Ritual chocolate\n• Terapia Geotermal\n• Tratamiento anticelulítico\n";
     const textoWomfly = "Nuestros servicios:";
     const textoOlivalolo ="FOTOGRAFÍA PERFIL PERSONAL: \n• Pack exclusivo para empresas y profesionales. \n• Fotografía de retrato y familiar\n\nILUSTRACIÓN:\n• Retratos personalizados\n• Maquetación e ilustración\n\nVIDEO MARKETING:\n•Cortometrajes\n•Documentales\n•Videoclips.";
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             color: "#9bc4fe"
         },
         {
-            desc: "\"La belleza más allá de la piel\" Mi objetivo es promover el autocuidado fomentando el descubrimiento del propio espacio y bienestar.",
+            desc: infoKalon,
             client: "",
             extra: textoKalon,
             imgL: "media/sandra.png", 
