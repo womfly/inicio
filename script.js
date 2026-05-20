@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        // Alternar menú al hacer clic
+        dropdownBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita que el evento se propague al documento
+            dropdownMenu.classList.toggle('show');
+            dropdownBtn.classList.toggle('active');
+        });
+
+        // Cerrar el menú si se hace clic fuera de él
+        document.addEventListener('click', (e) => {
+            if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+                dropdownBtn.classList.remove('active');
+            }
+        });
+
     // =========================================
     // 1. CONFIGURACIÓN DE DATOS (Proyectos)
     // =========================================

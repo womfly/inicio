@@ -2929,3 +2929,98 @@ h2, h3, .hero-subtitle {
 ::-webkit-scrollbar-button:end:single-button {
     display: none;
 }
+
+
+/*HEADER*/
+
+.dropdown {
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón de Presupuestos */
+.dropdown-trigger {
+    background: none;
+    border: 1px solid rgba(244, 236, 216, 0.3);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.dropdown-trigger:hover, .dropdown-trigger.active {
+    color: var(--gold);
+    border-color: var(--gold);
+    background-color: rgba(212, 175, 55, 0.05);
+}
+
+/* Pequeño triángulo indicador */
+.dropdown-trigger::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: transform 0.3s;
+}
+
+.dropdown-trigger.active::after {
+    transform: rotate(180deg);
+}
+
+/* Menú Flotante (Contenedor de los botones) */
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background-color: #1a1a1a;
+    min-width: 180px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 1100;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Clase activa para mostrar el menú */
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Botones interiores del menú */
+.dropdown-menu a {
+    display: block;
+    color: var(--accent-color);
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--gold);
+    color: white;
+    padding-left: 24px; /* Efecto sutil de desplazamiento al pasar el ratón */
+}
