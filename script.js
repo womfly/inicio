@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. CONFIGURACIÓN DE DATOS (Proyectos)
     // =========================================
     const colorInicio = "#1dbbff"; // Color base al estar al principio
-    const infoKalon = "\"La belleza más allá de la piel\" \nMi objetivo es promover el autocuidado fomentando el descubrimiento del propio espacio y bienestar.";
+    const infoKalon = "\"La belleza más allá de la piel\"\tMi objetivo es promover el autocuidado fomentando el descubrimiento del propio espacio y bienestar.";
     const textoKalon = "TRATAMIENTOS FACIALES:\n• Higiene facial\n• Higiene más Técnica de Kobido\n\nTRATAMIENTOS CORPORALES:\n• Higiene corporal\n• Ritual chocolate\n• Terapia Geotermal\n• Tratamiento anticelulítico\n";
     const textoWomfly = "Nuestros servicios:";
     const textoOlivalolo ="FOTOGRAFÍA PERFIL PERSONAL: \n• Pack exclusivo para empresas y profesionales. \n• Fotografía de retrato y familiar\n\nILUSTRACIÓN:\n• Retratos personalizados\n• Maquetación e ilustración\n\nVIDEO MARKETING:\n•Cortometrajes\n•Documentales\n•Videoclips.";
@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "La unión de dos mundos creativos bajo una misma visión: Womfly.",
             client: "Explora el universo Womfly",
             extra: "Nuestros servicios.",
-            imgL: "media/fotodual.jpeg",
+            imgL: "media/fotodual.png",
             imgR: "media/logo-grandeB.png",
             color: "#9bc4fe"
+
         },
         {
             desc: infoKalon,
@@ -23,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             extra: textoKalon,
             imgL: "media/sandra.png", 
             imgR: "media/logo-kalon.png",
-            color: "#e9c2db" 
+            color: "#e9c2db", 
+            colorAla: "#000"
         },
         {
             desc: "Contenido visual cuidado y estratégico: transformamos la identidad de marca en imágenes con valor, coherencia y estética avanzada.",
@@ -31,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
             extra: textoOlivalolo,
             imgL: "media/olivalolo.png",
             imgR: "media/logo-olivalolo.png",
-            color: "#df1c4a"
+            color: "#df1c4a",
+            colorAla: "#b71d46"
         },
         
     ];
@@ -143,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 document.documentElement.style.setProperty('--accent-color', p.color);
+                document.documentElement.style.setProperty('--wing-color', p.colorAla);
 
                 // Actualizamos el fondo inmediatamente con el nuevo color del proyecto
                 updateBackground();
